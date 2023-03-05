@@ -1,0 +1,25 @@
+
+
+<%= form_with model: @reservation do |f| %>
+
+    <div class="field">
+        <%= f.label :check_in %><br />
+        <%= f.date_field :check_in %>
+    </div>
+
+    <div class="field">
+        <%= f.label :check_out %><br />
+        <%= f.date_field :check_out %>
+    </div>
+
+    <div class="field">
+        <%= f.label :number %><br />
+        <%= f.text_field :number %>
+    </div>
+
+    <div class="actions">
+        <%= f.submit "予約する" %>
+    </div>
+
+<% end %>
+    

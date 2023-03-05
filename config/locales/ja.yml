@@ -1,13 +1,20 @@
- ja:
-   activerecord:
-     models:
-       room: ユーザー
-     attributes:
-       room:
-         name: 施設名
-         image: 施設画像
-         fee: 料金
-         introduction: 紹介文
-         created_at: 作成日
-         address: 住所
-         detail: 施設詳細
+ja:
+  activerecord:
+    models:
+      # view側： User.model_name.human => "ユーザ" / t("activerecord.models.user")と同じ
+      room: 施設 
+      reservation: 予約
+    # model毎に定義したいattributesを記述
+    attributes:
+        room:
+          # view側： User.human_attribute_name :name => "名前" /　t("activerecord.attributes.user.name")と同じ
+          name: 施設名
+          image: 施設画像
+          introduction: 紹介文
+          fee: 宿泊料金
+          address: 住所
+          detail: 施設紹介
+  # 全てのmodelで共通して使用するattributesを定義
+  attributes:
+    created_at: 作成日
+    updated_at: 更新日
