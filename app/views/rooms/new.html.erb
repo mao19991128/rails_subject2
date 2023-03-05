@@ -1,0 +1,32 @@
+<h1>施設の新規登録</h1>
+
+<%= form_with model: @room do |f| %>
+
+    <div class="field">
+        <%= f.label :name %><br />
+        <%= f.text_field :name %>
+    </div>
+
+    <div class="field">
+        <%= f.label :detail %><br />
+        <%= f.text_field :detail %>
+    </div>
+
+    <div class="field">
+        <%= f.label :fee %><br />
+        <%= f.text_field :fee %>
+    </div>
+
+    <div class="field">
+        <%= f.label :address %><br />
+        <%= f.text_field :address %>
+    </div>
+
+    <div class="field">
+        <%= f.label :image %><br />
+    </div>
+
+    <div class="actions">
+        <%= f.submit "保存" %>
+    </div>
+<% end %>

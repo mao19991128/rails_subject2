@@ -54,3 +54,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+# Reduces boot times through caching; required in config/boot.rb
+ gem 'bootsnap', '>= 1.4.4', require: false
+ gem 'rails-i18n'
+
+  gem 'devise'
+
+  gem 'devise-i18n'
+  gem 'devise-i18n-views'

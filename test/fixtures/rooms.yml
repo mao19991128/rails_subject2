@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  image: MyString
+  name: MyString
+  introduction: MyText
+  fee: 1
+  create_at: 2023-03-05
+  address: MyString
+  detail: MyText
+  user_id: 1
+
+two:
+  image: MyString
+  name: MyString
+  introduction: MyText
+  fee: 1
+  create_at: 2023-03-05
+  address: MyString
+  detail: MyText
+  user_id: 1
