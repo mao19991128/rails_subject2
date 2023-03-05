@@ -1,7 +1,7 @@
-ja:
-    activerecord:
+ ja:
+   activerecord:
      models:
-       room: 施設
+       room: ユーザー
      attributes:
        room:
          name: 施設名
@@ -11,4 +11,3 @@ ja:
          created_at: 作成日
          address: 住所
          detail: 施設詳細
-         

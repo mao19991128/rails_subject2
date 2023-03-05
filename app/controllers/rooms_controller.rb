@@ -21,3 +21,8 @@ class RoomsController < ApplicationController
   end
   
 end
+
+private
+  def room_params
+    params.require(:room).permit(:name, :introduce, :image, :fee, :created_at, :address, :detail)
+  end
