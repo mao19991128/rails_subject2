@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   resources :reservations
   get "users/show" => "users#show"
   get "users/profile" =>"users#profile"
+  get "users/profile_edit" =>"users#profile_edit"
 end
