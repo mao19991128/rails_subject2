@@ -24,8 +24,13 @@ class UsersController < ApplicationController
 
   def profile_edit
     @user = current_user
-    if current_user.update(user_params)
-      flash[:notice] = "保存しました"
+  end
+
+  def update
+    @user = current_user
+    if @user.update(params.require(:user).permit(:name, :image, :introduction))
+      flash[:notice] = "更新しました"
+      redirect_to:users
     else
       flash[:alert] = "更新できません"
       render "edit"
