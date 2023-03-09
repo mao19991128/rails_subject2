@@ -21,5 +21,7 @@ module Lesson2
     config.action_controller.permit_all_parameters = true
     config.i18n.default_locale = :ja
     config.time_zone = 'Tokyo'
+
+    config.autoload_paths += Dir.glob("#{config.root}/app/views")
   end
 end

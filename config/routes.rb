@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'pages#index'
+  get 'pages/show'
   get 'reservations/index'
   get 'rooms/index'
   # ログイン、アカウント編集後、任意のページに推移させるための記述

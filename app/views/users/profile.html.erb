@@ -1,9 +1,9 @@
 <h1>設定</h1>
 
-<%= link_to"アカウント" %>
+<%= link_to"アカウント",users_show_path %>
 <%= link_to"プロフィール" %>
 <h2>プロフィール<h2>
-<%= link_to"編集" %>
+<%= link_to"編集",users_profile_edit_path %>
 <h3>アイコン画像</h3>
 <% if @user.image? %>
     <%= image_tag @user.image.thumb.url %>
