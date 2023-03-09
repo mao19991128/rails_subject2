@@ -14,9 +14,14 @@
     <header>
       <nav>
         <% if user_signed_in? %>
-          <strong><%= link_to current_user.name %></strong>
             <%= link_to 'プロフィール変更', edit_user_registration_path %>
             <%= link_to 'ログアウト', destroy_user_session_path, method: :delete %>
+            <%= @user.name %>
+            <% if @user.image? %>
+              <%= image_tag @user.image.thumb.url %>
+            <% else %>
+              <%= image_tag 'https://rails-02-sample.herokuapp.com/assets/common/default-avatar-7a6cbfd7993e89f24bfc888f4a035a83c6f1428b8bdc47eed9095f2799a40153.png' %>
+            <% end %>
         <% else %>
           <%= link_to '新規登録', new_user_registration_path %>
           <%= link_to 'ログイン', new_user_session_path %>

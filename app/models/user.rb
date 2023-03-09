@@ -8,5 +8,5 @@ class User < ApplicationRecord
  mount_uploader :image, ImageUploader
 
  validates :name, presence: true #追記
-  validates :introduction, length: { maximum: 200 } #追記
+ validates :introduction, length: { maximum: 200 } #追記
 end
